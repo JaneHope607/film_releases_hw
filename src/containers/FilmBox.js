@@ -36,8 +36,11 @@ class FilmBox extends Component {
 
     render() {
         return(
-            <div className="film-data">
+            <div className="film-container">
                 <FilmList films={this.state.films}/>
+                <button className="button">
+                    <a href="https://www.imdb.com/calendar/?region=gb" className="view-more">View more upcoming releases</a>
+                </button>
             </div>
         );
     }
